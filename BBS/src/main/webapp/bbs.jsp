@@ -96,16 +96,14 @@
                 <%
                     BbsDAO bbsDAO = new BbsDAO();
                     ArrayList<Bbs> list = bbsDAO.getList(pageNumber);
-                    for(int i = 0; i < list.size(); i++)
-                    {
+                    for(int i = 0; i < list.size(); i++) {
                 %>
-                
                     <tr>
-                        <td><%=list.get(i).getBbsID() %></td>
-                        <td><a href="view.jsp?bbsID=<%=list.get(i).getBbsID()%>"><%=list.get(i).getBbsTitle() %></a></td>
-                        <td><%=list.get(i).getUserID() %></td>
-                        <td><%=list.get(i).getBbsDate().substring(0,11) + list.get(i).getBbsDate().substring(11, 13) + "시" 
-                        + list.get(i).getBbsDate().substring(14,16) + "분" %></td>
+                        <td><%= list.get(i).getBbsID() %></td>
+                        <td><a href = "view.jsp?bbsID = <%= list.get(i).getBbsID() %>"><%= list.get(i).getBbsTitle() %></a></td>
+                        <td><%= list.get(i).getUserID() %></td>
+                        <td><%= list.get(i).getBbsDate().substring(0, 11) + list.get(i).getBbsDate().substring(11, 13) + "시" 
+                        	+ list.get(i).getBbsDate().substring(14, 16) + "분" %></td>
                     </tr>
                 <%
                     }

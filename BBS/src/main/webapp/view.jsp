@@ -90,7 +90,10 @@
 					<tbody>
 						<tr>
 							<td style="width: 20%">글 제목</td>
-							<td colspan="2"><%= bbs.getBbsTitle().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
+							<td colspan="2">
+								<%= bbs.getBbsTitle().replaceAll(" ", "&nbsp;")
+								.replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+								.replaceAll("\n", "<br>") %></td>
 						</tr>
 						<tr>
 							<td>작성자</td>
@@ -98,11 +101,17 @@
 						</tr>
 						<tr>
 							<td>작성일자</td>
-							<td colspan="2"><%= bbs.getBbsDate().substring(0,11)+bbs.getBbsDate().substring(11,13)+"시"+bbs.getBbsDate().substring(14,16)+"분" %></td>
+							<td colspan="2"><%= bbs.getBbsDate().substring(0,11)
+								+bbs.getBbsDate().substring(11,13)
+								+"시"+bbs.getBbsDate().substring(14,16)
+								+"분" %></td>
 						</tr>
 						<tr>
 							<td>내용</td>
-							<td colspan="2" style="min-height: 200px; text-align: left;"><%= bbs.getBbsContent().replaceAll(" ","&nbsp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll("\n","<br>") %></td>
+							<td colspan="2" style="min-height: 200px; text-align: left;">
+							<%= bbs.getBbsContent().replaceAll(" ","&nbsp;")
+							.replaceAll("<","&lt;").replaceAll(">","&gt;")
+							.replaceAll("\n","<br>") %></td>
 						</tr>
 						
 					</tbody>
@@ -111,8 +120,12 @@
 				<%
 					if(userID != null && userID.equals(bbs.getUserID())){
 				%>
-						<a href="update.jsp?bbsID=<%=bbsID%>" class="btn btn-warning">수정</a>
-						<a onclick="return confirm('정말로 삭제하시겠습니까?')" href="deleteAction.jsp?bbsID=<%=bbsID%>" class="btn btn-danger">삭제</a>
+						<a href="update.jsp?bbsID=<%=bbsID%>" class="btn btn-warning">
+						수정
+						</a>
+						<a onclick="return confirm('정말로 삭제하시겠습니까?')"
+							href="deleteAction.jsp?bbsID=<%=bbsID%>"
+							class="btn btn-danger">삭제</a>
 				<%
 					}
 				%>

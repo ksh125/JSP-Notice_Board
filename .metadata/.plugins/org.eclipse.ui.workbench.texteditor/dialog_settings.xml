@@ -9,14 +9,33 @@
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
 			<item value="response"/>
+			<item value="reponse"/>
+			<item value="action"/>
+			<item value="UserDAO"/>
+			<item value="userDAO"/>
+			<item value="&lt;%="/>
+			<item value="  "/>
+			<item value="=  ="/>
+			<item value="= ="/>
+			<item value="! ="/>
+			<item value="&lt;% = "/>
+			<item value="="/>
+			<item value="&lt;% ="/>
 			<item value="print"/>
 			<item value="respon"/>
 		</list>
 		<list key="replacehistory">
+			<item value="&lt;%= "/>
+			<item value=" "/>
+			<item value="=="/>
+			<item value="!="/>
+			<item value="&lt;%="/>
+			<item value=" = "/>
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-282"/>
+		<item key="DIALOG_X_ORIGIN" value="8"/>
 		<item key="DIALOG_Y_ORIGIN" value="267"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
