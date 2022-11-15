@@ -2,11 +2,9 @@
 <%@ page import = "user.UserDAO"%>
 <%@ page import = "java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
- 
 <jsp:useBean id = "user" class = "user.User" scope = "page"></jsp:useBean>
 <jsp:setProperty name = "user" property = "userID" />
 <jsp:setProperty name = "user" property = "userPassword" />
- 
 <head>
 <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8">
 <title>JSP 게시판 웹 사이트</title>
@@ -21,7 +19,7 @@
         if(userID != null) {
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('이미 로그인이 되어있습니다.')");
+            script.println("alert('이미 로그인 하셨어용')");
             script.println("location.href = 'main.jsp'");
             script.println("</script>");
         }
@@ -32,26 +30,27 @@
             session.setAttribute("userID", user.getUserID()); 
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("location.href = 'main.jsp'");
+            script.println("location.href='main.jsp'");
             script.println("</script>");
             
         } else if (result == 0){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('비밀번호를 확인해 봐..크킄ㅋ')");
+            script.println("alert('비밀번호가 달라용')");
             script.println("history.back()"); 
             script.println("</script>");
             
         } else if (result == -1){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('이 아이디는 사용할 수 없다...크킄ㅋ')");
+            script.println("alert('아이디가 없어용')");
             script.println("history.back()");
             script.println("</script>");
+        
         } else if (result == -2){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('DB 오류가 발생했습니다.')");
+            script.println("alert('DB오류가 있어용')");
             script.println("history.back()");
             script.println("</script>");
         }
