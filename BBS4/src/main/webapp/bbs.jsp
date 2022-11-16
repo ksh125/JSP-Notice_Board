@@ -25,6 +25,7 @@
     if (session.getAttribute("userID") != null) {
         userID = (String)session.getAttribute("userID");
     }
+    
     int pageNumber = 1;
     if(request.getParameter("pageNumber") != null) {
     	pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
@@ -71,8 +72,7 @@
                 <a href = "#" class = "dropdown-toggle"
                     data-toggle = "dropdown" role = "button"
 					aria-haspopup = "true"
-                    aria-expanded = "false">
-                    접속하기<span class = "caret"></span></a>
+                    aria-expanded = "false">접속하기<span class = "caret"></span></a>
                     <ul class = "dropdown-menu">
                         <li><a href = "logoutAction.jsp">
                         로그아웃</a></li>
@@ -119,8 +119,8 @@
 				<a href = "bbs.jsp?pageNumber=<%=pageNumber-1%>"
 					class = "btn btn-success btn-arrow-left">이전</a>
 			<% } if(bbsDAO.nextPage(pageNumber + 1)) { %>
-				<a href = "bbs.jsp?pageNumber=<%= pageNumber - 1 %>"
-					class = "btn btn-success btn-arrow-rigth">다음</a>
+				<a href = "bbs.jsp?pageNumber=<%= pageNumber + 1 %>"
+					class = "btn btn-success btn-arrow-left">다음</a>
 			<% } %>
 			<a href = "write.jsp" 
 				class = "btn btn-primary pull-right">작성</a>

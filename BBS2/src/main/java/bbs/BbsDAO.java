@@ -35,8 +35,7 @@ public class BbsDAO {
         return "";
     }
     
-    public int getNext()
-    {
+    public int getNext() {
         String SQL = "SELECT bbsID FROM BBS ORDER BY bbsID DESC";
         try {     
             PreparedStatement pstmt = conn.prepareStatement(SQL);
