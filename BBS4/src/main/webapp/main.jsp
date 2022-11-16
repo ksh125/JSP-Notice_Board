@@ -26,7 +26,7 @@
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
             </button>
-            <a class = "navbar-brand" href = "main.jsp">JSP 게시판 웹 사이트</a>
+            <a class = "navbar-brand" href = "main.jsp">응애 게시판</a>
         </div>
         <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
             <ul class = "nav navbar-nav">
@@ -64,8 +64,9 @@
             <div class = "container">
                 <h1>흠</h1>
                 <p>다음엔 소개 추가해야겠다</p>
-                <p><a class = "btn btn-primary btn-pull"
-                	href = "#" role = "button">히히 이게 뭐게</a></p>
+                <p><a class = "btn btn-danger btn-pull"
+                	href = "https://pbs.twimg.com/media/CZ-U8_DWQAA0sdu?format=jpg&name=large"
+                	role = "button">히히 이게 뭐게</a></p>
             </div>
         </div>
     </div>

@@ -43,11 +43,13 @@
             PrintWriter script = response.getWriter();
             script.println("<script>");
             script.println("alert('권한이 없습니다')");
-            script.println("location.href = 'bbs.jsp'");
+            script.println("location.href='bbs.jsp'");
             script.println("</script>");
         } else {
-	        if(request.getParameter("bbsTitle") == null || request.getParameter("bbsContent") == null
-	            || request.getParameter("bbsTitle").equals("") || request.getParameter("bbsContent").equals("")) {
+	        if(request.getParameter("bbsTitle") == null ||
+	        	request.getParameter("bbsContent") == null
+	            || request.getParameter("bbsTitle").equals("")
+	            || request.getParameter("bbsContent").equals("")) {
 	            PrintWriter script = response.getWriter();
 	            script.println("<script>");
 	            script.println("alert('입력이 안된 사항이 있습니다.')");

@@ -1,4 +1,4 @@
-<%@ page language = "java" contentType = "text/html; charset = UTF-8"
+<%@ page language = "java" contentType = "text/html; charset=UTF-8"
 	pageEncoding = "UTF-8"%>
 <%@ page import = "user.UserDAO"%>
 <%@ page import = "java.io.PrintWriter"%>
@@ -8,7 +8,7 @@
 <jsp:setProperty name = "user" property = "userPassword" />
 <head>
 <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8">
-<title>JSP 게시판 웹 사이트</title>
+<title>로그인 동작 페이지</title>
 </head>
 <body>
     <%
@@ -20,7 +20,7 @@
         if(userID != null) {
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('로그인 하셨는데 왜 또 그래여')");
+            script.println("alert('이미 로그인이 돼있어용!')");
             script.println("location.href = 'main.jsp'");
             script.println("</script>");
         }
@@ -31,27 +31,27 @@
             session.setAttribute("userID", user.getUserID()); 
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("location.href = 'main.jsp'");
+            script.println("location.href='main.jsp'");
             script.println("</script>");
             
         } else if (result == 0){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('이잉 비밀번호가 이상하잖아요')");
+            script.println("alert('비밀번호가 달라용!')");
             script.println("history.back()"); 
             script.println("</script>");
             
         } else if (result == -1){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('이거 아이디가 없는데여')");
+            script.println("alert('이거 아이디가 없는데용')");
             script.println("history.back()");
             script.println("</script>");
             
         } else if (result == -2){
             PrintWriter script = response.getWriter();
             script.println("<script>");
-            script.println("alert('이봐 예림이 거기 DB 까봐')");
+            script.println("alert('DB가 이상해용')");
             script.println("history.back()");
             script.println("</script>");
         }

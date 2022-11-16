@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset = "UTF-8">
-<title>이걸 보네ㅋㅋ</title>
+<title>로그아웃 기능 페이지ㅋ</title>
 </head>
 <body>
 	<% session.invalidate(); %>

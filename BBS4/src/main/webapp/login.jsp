@@ -7,7 +7,7 @@
 <meta name = "viewport" content = "width=device-width", initial-scale = "1" >
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
-<title>우왕 로그인이당</title>
+<title>로그인 페이지</title>
 </head>
 <body>
     <nav class = "navbar navbar-default">

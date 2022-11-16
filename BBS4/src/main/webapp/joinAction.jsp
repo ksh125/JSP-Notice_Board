@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">
-<title>회원가입</title>
+<title>회원가입 기능 페이지</title>
 </head>
 <body>
     <%
