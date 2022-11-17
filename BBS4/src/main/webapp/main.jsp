@@ -8,7 +8,7 @@
 <meta name = "viewport" content = "width=device-width", initial-scale = "1" >
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel = "stylesheet" href = "css/custom.css">
-<title>새로운 게시판</title>
+<title>게시판 웹사이트</title>
 </head>
 <body>
 <%
@@ -26,7 +26,7 @@
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
             </button>
-            <a class = "navbar-brand" href = "main.jsp">응애 게시판</a>
+            <a class = "navbar-brand" href = "main.jsp">GaeSiPan</a>
         </div>
         <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
             <ul class = "nav navbar-nav">
@@ -62,11 +62,12 @@
     <div class = "container">
         <div class = "jumbotron">
             <div class = "container">
-                <h1>흠</h1>
-                <p>다음엔 소개 추가해야겠다</p>
+                <h1>GaeSiPan</h1>
+                <p>이 게시판은 부트스트랩 기반의 CSS로 만들어진 JSP 게시판입니다</p>
+                <p>이 웹사이트는 회원가입, 로그인, 게시글 작성 등의 기능이 존재합니다</p>
                 <p><a class = "btn btn-danger btn-pull"
-                	href = "https://pbs.twimg.com/media/CZ-U8_DWQAA0sdu?format=jpg&name=large"
-                	role = "button">히히 이게 뭐게</a></p>
+                	href = "/B_B_S/src/main/webapp/images/hamjung.jpg"
+                	role = "button">누르지 마세요</a></p>
             </div>
         </div>
     </div>
