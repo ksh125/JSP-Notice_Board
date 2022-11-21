@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="22">
-    <list key="modules" value0="PROJECT_BBS::org.eclipse.jst.jee.server:PROJECT_BBS::jst.web::3.1" value1="myHtml::org.eclipse.jst.jee.server:myHtml::jst.web::3.1" value2="qwED::org.eclipse.jst.jee.server:qwED::jst.web::3.1" value3="BBS4::org.eclipse.jst.jee.server:BBS4::jst.web::3.1"/>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="26">
+    <list key="modules" value0="myHtml::org.eclipse.jst.jee.server:myHtml::jst.web::3.1" value1="B_B_S::org.eclipse.jst.jee.server:B_B_S::jst.web::3.1"/>
   </server>
 </servers>

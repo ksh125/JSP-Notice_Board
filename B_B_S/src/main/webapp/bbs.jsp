@@ -19,17 +19,17 @@
 </style>
 </head>
 <body>
-<%
-    String userID  =  null;
-    if (session.getAttribute("userID") !=  null) {
-        userID  =  (String)session.getAttribute("userID");
-    }
-    
-    int pageNumber  =  1;
-    if (request.getParameter("pageNumber") !=  null) {
-        pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-    }
-%>
+	<%
+	    String userID  =  null;
+	    if (session.getAttribute("userID") !=  null) {
+	        userID  =  (String)session.getAttribute("userID");
+	    }
+	    
+	    int pageNumber  =  1;
+	    if (request.getParameter("pageNumber") !=  null) {
+	        pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+	    }
+	%>
     <nav class = "navbar navbar-default">
         <div class = "navbar-header">
             <button type = "button" class = "navbar-toggle collapsed"
@@ -39,7 +39,7 @@
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
             </button>
-            <a class  = "navbar-brand" href = "main.jsp">JSP 게시판 웹 사이트</a>
+            <a class  = "navbar-brand" href = "main.jsp">GaeSiPan</a>
         </div>
         <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
             <ul class = "nav navbar-nav">

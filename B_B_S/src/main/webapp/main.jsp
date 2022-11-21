@@ -62,7 +62,7 @@
     <div class = "container">
         <div class = "jumbotron">
             <div class = "container">
-                <<h1>GaeSiPan</h1>
+                <h1>GaeSiPan</h1>
                 <p>이 게시판은 부트스트랩 기반의 CSS로 만들어진 JSP 게시판입니다</p>
                 <p>이 웹사이트는 회원가입, 로그인, 게시글 작성 등의 기능이 존재합니다</p>
                 <p><a class = "btn btn-danger btn-pull"

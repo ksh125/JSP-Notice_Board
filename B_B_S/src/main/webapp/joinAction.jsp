@@ -6,8 +6,8 @@
 <jsp:setProperty name = "user" property = "userID"/>
 <jsp:setProperty name = "user" property = "userPassword"/>
 <jsp:setProperty name = "user" property = "userName"/>
-<jsp:setProperty name =" user" property = "userGender"/>
-<jsp:setProperty name =" user" property = "userEmail"/>
+<jsp:setProperty name = "user" property = "userGender"/>
+<jsp:setProperty name = "user" property = "userEmail"/>
 <!DOCTYPE html>
 <html>
 <head>
