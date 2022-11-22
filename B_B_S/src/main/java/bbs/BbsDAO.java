@@ -11,7 +11,7 @@ public class BbsDAO {
             String dbURL = "jdbc:mysql://localhost:3306/BBS";
             String dbID = "root";
             String dbPassword = "0000";
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,7 +116,7 @@ public class BbsDAO {
     			bbs.setBbsDate(rs.getString(4));
     			bbs.setBbsContent(rs.getString(5));
     			bbs.setBbsAvailable(rs.getInt(6));
-    			return bbs;
+    			return bbs; 
     		}
     	} catch (Exception e) {
     		e.printStackTrace();

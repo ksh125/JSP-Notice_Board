@@ -30,7 +30,7 @@
 	        pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
 	    }
 	%>
-    <nav class = "navbar navbar-default">
+    <nav class = "navbar navbar-inverse">
         <div class = "navbar-header">
             <button type = "button" class = "navbar-toggle collapsed"
                 data-toggle = "collapse" data-target = "#bs-example-navbar-collapse-1"
