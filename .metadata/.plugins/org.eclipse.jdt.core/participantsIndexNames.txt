@@ -65,6 +65,8 @@ C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst
 \BBS4\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1930536483.index
 \BBS\src\main\java
+C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2231025087.index
+\비비에스\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2729176866.index
 \BBS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\85485306.index

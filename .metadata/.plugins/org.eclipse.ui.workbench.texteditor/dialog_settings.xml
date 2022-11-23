@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="&lt;%@ page language = &quot;java&quot; contentType = &quot;text/html; charset = UTF-8&quot;"/>
 			<item value="active"/>
 			<item value="BBsId"/>
 			<item value="BbsId"/>
@@ -22,7 +23,6 @@
 			<item value="userDAO"/>
 			<item value="&lt;%="/>
 			<item value="  "/>
-			<item value="=  ="/>
 		</list>
 		<list key="replacehistory">
 			<item value="&lt;%= "/>
