@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8">
-<meta name = "viewport" content = "width = device-width", initial-scale = "1" >  
+<meta name = "viewport" content = "width = device-width, initial-scale = 1" >  
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <title>JSP 게시판 웹 사이트</title>
 <style type = "text/css">
@@ -20,15 +20,15 @@
 </head>
 <body>
 	<%
-	    String userID  =  null;
-	    if (session.getAttribute("userID") !=  null) {
-	        userID  =  (String)session.getAttribute("userID");
-	    }
-	    
-	    int pageNumber  =  1;
-	    if (request.getParameter("pageNumber") !=  null) {
-	        pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-	    }
+    String userID = null;
+    if (session.getAttribute("userID") !=  null) {
+        userID = (String)session.getAttribute("userID");
+    }
+    
+    int pageNumber = 1;
+    if (request.getParameter("pageNumber") != null) {
+        pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+    }
 	%>
     <nav class = "navbar navbar-inverse">
         <div class = "navbar-header">
@@ -46,9 +46,7 @@
                 <li><a href = "main.jsp">메인</a></li>
                 <li class = "active"><a href = "bbs.jsp">게시판</a></li>
             </ul>
-            <%
-                if(userID == null) {
-            %>
+            <% if(userID == null) { %>
             <ul class = "nav navbar-nav navbar-right">
                 <li class = "dropdown">
                 <a href = "#" class  =  "dropdown-toggle"
@@ -60,9 +58,7 @@
                     </ul>
                 </li>
             </ul>
-            <%
-                } else {
-            %>
+            <% } else { %>
             <ul class = "nav navbar-nav navbar-right">
                 <li class = "dropdown">
                 <a href = "#" class = "dropdown-toggle"
@@ -73,9 +69,7 @@
                     </ul>
                 </li>
             </ul>
-            <%
-                }
-            %>
+            <% } %>
         </div>
     </nav>
     <div class = "container">
@@ -91,9 +85,9 @@
                 </thead>
                 <tbody>
                 <%
-                    BbsDAO bbsDAO = new BbsDAO();
-                    ArrayList<Bbs> list = bbsDAO.getList(pageNumber);
-                    for(int i = 0; i < list.size(); i++) {
+                BbsDAO bbsDAO = new BbsDAO();
+                ArrayList<Bbs> list = bbsDAO.getList(pageNumber);
+                for(int i = 0; i < list.size(); i++) {
                 %>
                     <tr>
                         <td><%= list.get(i).getBbsID() %></td>

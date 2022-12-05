@@ -53,6 +53,8 @@ C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst
 \BBS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\23601324.index
 \BBS\src\main\java
+C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2438082153.index
+\BIBIAS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\449582781.index
 \BBS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1723901370.index
@@ -63,6 +65,8 @@ C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst
 \BBS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3386959597.index
 \BBS4\src\main\java
+C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1608787645.index
+\홈페이지\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1930536483.index
 \BBS\src\main\java
 C:\Users\Administrator\Desktop\study\projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2231025087.index

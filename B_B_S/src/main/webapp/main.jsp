@@ -5,18 +5,18 @@
 <html>
 <head>
 <meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8">
-<meta name = "viewport" content = "width=device-width", initial-scale = "1" >
+<meta name = "viewport" content = "width=device-width, initial-scale = 1">
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel = "stylesheet" href = "css/custom.css">
 <title>GaeSiPan</title>
 </head>
 <body>
-<%
+	<%
     String userID = null;
     if (session.getAttribute("userID") != null) {
         userID = (String)session.getAttribute("userID");
     }
-%>
+	%>
     <nav class = "navbar navbar-inverse">
         <div class = "navbar-header">
             <button type = "button" class = "navbar-toggle collapsed"
@@ -66,8 +66,8 @@
                 <p>이 게시판은 부트스트랩 기반의 CSS로 만들어진 JSP 게시판입니다</p>
                 <p>이 웹사이트는 회원가입, 로그인, 게시글 작성 등의 기능이 존재합니다</p>
                 <p><a class = "btn btn-danger btn-pull"
-                	href = "/B_B_S/src/main/webapp/images/hamjung.jpg"
-                	role = "button">누르지 마세요</a></p>
+                href = "/B_B_S/src/main/webapp/images/hamjung.jpg"
+                role = "button">누르지 마세요</a></p>
             </div>
         </div>
     </div>
